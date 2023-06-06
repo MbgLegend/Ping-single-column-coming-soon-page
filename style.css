@@ -1,0 +1,134 @@
+/*
+- Gray: hsl(0, 0%, 59%)
+- Very Dark Blue: hsl(209, 33%, 12%)
+- Pale Blue: hsl(223, 100%, 88%)
+- Light Red: hsl(354, 100%, 66%)
+- Blue: hsl(223, 87%, 63%)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    --Libre-Franklin: 'Libre Franklin', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    text-align: center;
+    padding: 6rem 5rem;
+    font-family: var(--Libre-Franklin);
+}
+h1 {
+    margin-top: 2.275rem;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    font-size: 2.675rem;
+}
+h1 span {
+    font-weight: 700;
+    color: #000;
+}
+p {
+    font-size: 1.25rem;
+    margin-top: 0.775rem;
+}
+div {
+    margin-top: 2rem;
+}
+div input {
+    width: 27%;
+    padding: 0.965rem 1.5rem;
+    font-family: var(--Libre-Franklin);
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 30px;
+    color: hsl(0, 0%, 59%);
+}
+div input::placeholder {
+    color: hsl(0, 0%, 59%);
+    font-family: var(--Libre-Franklin);
+}
+div button {
+    width: 13%;
+    margin-left: 0.75rem;
+    padding: 0.965rem 1.5rem;
+    font-size: 1rem;
+    font-family: var(--Libre-Franklin);
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 4px 4px 3px rgba(0,0,0,0.05);
+}
+div button:hover {
+    filter: brightness(120%);
+}
+div h3 {
+    font-size: 0.975rem;
+    color: hsl(354, 100%, 66%);
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 10px;
+    display: none;
+}
+.error-active {
+    display: block;
+}
+img.illustration {
+    width: 42%;
+    margin-top: 5rem;
+    margin-bottom: 1.85rem;
+}
+div i {
+    margin-inline: 10px;
+    font-size: 1.185rem;
+    border: 1px solid hsla(0, 0%, 59%, 0.363);
+    color: hsl(223, 87%, 63%);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    cursor: pointer;
+}
+div i:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+}
+footer {
+    margin-top: 2rem;
+}
+@media screen and (max-width: 1220px) {
+    div input {
+        width: 35%;
+    }
+    div button {
+        width: 22%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    img.illustration {
+        width: 55%;
+    }
+}
+@media screen and (max-width: 800px) {
+    body {
+        padding: 6rem 3rem;
+    }
+    div input {
+        width: 100%;
+    }
+    div button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    img.illustration {
+        width: 80%;
+    }
+}
